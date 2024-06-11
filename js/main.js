@@ -40,6 +40,8 @@ const filterCategoriesMquerys = document.querySelectorAll("#filter-categories-mq
 const buttonsLoginRegisterMenuNavMquerys = document.querySelectorAll(".buttons-login-register-menu-nav-mquery");
 const buttonLogoutMenuNavMquerys = document.querySelectorAll(".button-logout-menu-nav-mquery");
 const closeBagMenuNavButton2Mquerys = document.querySelectorAll(".close-bag-menu-nav-button2-mquery");
+const modalProductDetailsStockProducts = document.querySelector(".modal-product-details-stock-products");
+const modalBillingDashboardContainer = document.querySelector(".modal-billing-dashboard-container");
 
 
 
@@ -1649,3 +1651,31 @@ function girarRuleta() {
     rouletteContent23.style.transform = "rotate(" + number + "deg)";
     number = Math.ceil(Math.random() * 100000);
 }
+
+/* modal stock dashboard */
+function closeModalStockDashboard() {
+    modalProductDetailsStockProducts.style.display = "none";
+
+    document.body.style.overflow = "auto";
+}
+
+function openModalStockDashboard() {
+    modalProductDetailsStockProducts.style.display = "flex";
+
+    document.body.style.overflow = "hidden";
+}
+/* modal stock dashboard End*/
+
+/* modal billing dashboard */
+function closeModalBillingDashboard() {
+    modalBillingDashboardContainer.style.display = "none";
+
+    document.body.style.overflow = "auto";
+}
+
+function openModalBillingDashboard() {
+    modalBillingDashboardContainer.style.display = "flex";
+
+    document.body.style.overflow = "hidden";
+}
+/* modal billing dashboard End*/
