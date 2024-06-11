@@ -11476,7 +11476,7 @@ footer {
     height: 2.135417vw;
     top: 4.166667vw;
     left: 42.395833vw;
-    object-fit: cover;
+    object-fit: contain;
 }
 /* loyalty program dashboard End */
 
@@ -12141,7 +12141,7 @@ footer {
     height: 2.135417vw;
     top: 4.427083vw;
     left: 40.885417vw;
-    object-fit: cover;
+    object-fit: contain;
 }
 /* loyalty rulette end */
 
